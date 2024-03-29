@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bca7d20c-467b-423c-b503-13234d3e61e0" name="更改" comment="TranxDecoding">
+    <list default="true" id="bca7d20c-467b-423c-b503-13234d3e61e0" name="更改" comment="TXCD">
+      <changelist_data name="TranxStar" email="121077527+tranxstar@users.noreply.github.com" />
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
@@ -43,6 +44,12 @@
     </system>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="TranxStar &lt;121077527+tranxstar@users.noreply.github.com&gt;" />
+      </list>
+    </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KotlinCodeInsightWorkspaceSettings">
@@ -78,6 +85,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\java\Github\TXDC\src\main\java\org\Tranx" />
       <recent name="E:\java\Github\TXDC\src\main\java\resources" />
     </key>
   </component>
@@ -90,27 +98,33 @@
       <option name="presentableId" value="Default" />
       <updated>1711716418422</updated>
     </task>
+    <task id="LOCAL-00001" summary="PLEASE README.md">
+      <option name="closed" value="true" />
+      <created>1711741656680</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711741656680</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TranxDecoding" />
-    <option name="LAST_COMMIT_MESSAGE" value="TranxDecoding" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/Tranx/Main.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/Tranx/Main.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="PLEASE README.md" />
+    <MESSAGE value="TXCD" />
+    <option name="LAST_COMMIT_MESSAGE" value="TXCD" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
