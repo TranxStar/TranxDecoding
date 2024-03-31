@@ -13,51 +13,63 @@ public class Main {
     public static Logger logger = Logger.getLogger("TDC");
     public static void main(String[] args) {
 
-        logger.info(NAME + " " + VERSION + " 正在加载，由 " + OWNER + " 驱动. ");
+        logger.info(NAME + " " + VERSION + " 由 " + OWNER + " 驱动 ");
         Toolkit tk = Toolkit.getDefaultToolkit();
         Dimension screenSize = tk.getScreenSize();
 
 
-        // 获取显示器分辨率
+        // ?????????????
         double width = screenSize.width;
         double height = screenSize.height;
 
-        // 计算窗口大小
+        // ???????С
         width = width * 0.33333;
         height = height * 0.37037;
         width = Math.round(width);
         height = Math.round(height);
+        int iheight = (int) height;
+        int iwidth = (int) width;
 
 
         //make window
         JFrame TD = new JFrame(NAME + " " + VERSION);
-        // 设置窗口大小
+        //set icon
+        ImageIcon icon=new ImageIcon("/resources/icon.png");  //xxx?????????·????2.png??????????
+        TD.setIconImage(icon.getImage());
+        // ????????С
         TD.setSize((int) width, (int) height);
-        //布局
+        //????
         TD.setLayout(null);
         //label
         JLabel lpath = new JLabel("请输入要转换为mp4的文件路径:");
         lpath.setBounds(50,50,190,30);
+        JLabel lchose = new JLabel("请选择：");
+        lchose.setBounds(iwidth/2,20,60,30);
 
+        //button
+        JButton fmb = new JButton("文件转mp4");
+        fmb.setBounds(iwidth/4-60,200,120,50);
+        JButton mfb = new JButton("mp4转文件");
+        mfb.setBounds((iwidth/4)*3-60,iheight/2 +50,120,50);
         //text1
         JTextField jtf1 = new JTextField();
-        jtf1.setBounds(250,50,50,30);
+        jtf1.setBounds(250,50,100,30);
 
-        //图标
+        //???
         //ImageIcon image = new ImageIcon(icon[i]);
-        //JButton jbcode = new JButton("编码");
-        //jbcode.setIcon(new ImageIcon(getClass().getResource("/image/icon.png")));
-        //添加控件
+        //JButton jbcode = new JButton("????");
+        //jbcode.setIcon(new ImageIcon(getClass().getResource("/image/icon.png"))); java按钮项目实例
+        //?????
         TD.add(lpath);
         TD.add(jtf1);
 
+        TD.add(fmb);
+        TD.add(mfb);
 
-        ImageIcon icon=new ImageIcon("/resources/icon.png");  //xxx代表图片存放路径，2.png图片名称及格式
-        TD.setIconImage(icon.getImage());
-        //锁死窗口大小
+        //?????????С
         TD.setResizable(false);
-        //TD.setUndecorated(true);纸张
-        //设置窗口可视化与关闭方式
+        //TD.setUndecorated(true);???
+        //?????????????????
         TD.setVisible(true);
         TD.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
