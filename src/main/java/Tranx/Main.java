@@ -48,6 +48,7 @@ public class  Main {
         JLabel lchose = new JLabel("请选择：");
         lchose.setBounds(iwidth/2,20,60,30);
         JLabel lwarning = new JLabel("无效的指向路径");
+        lwarning.setBounds(75,25,60,30);
         //filechooser
         JFileChooser fc = new JFileChooser();
 
@@ -70,6 +71,9 @@ public class  Main {
         //dialog
         JDialog jd = new JDialog(TD,"warning",true);
         jd.add(lwarning);
+        jd.setSize(200, 100);//设置其大小
+        //jd.setLocation(100,100);//设置其位置
+        jd.setDefaultCloseOperation(JDialog.HIDE_ON_CLOSE);
 
         //???
         //ImageIcon image = new ImageIcon(icon[i]);
@@ -109,10 +113,10 @@ public class  Main {
         mfb.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (jtf1.getText() == "hhh"){
+
                     jd.setVisible(true);
 
-                }
+
             }
         });
 
